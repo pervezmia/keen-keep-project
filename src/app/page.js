@@ -3,16 +3,19 @@ import BannerFourCard from "@/components/homePageComponents/banner/BannerFourCar
 import BannerTitle from "@/components/homePageComponents/banner/BannerTitle";
 // import Friends from "@/components/homePageComponents/friendsInfo/Friends";
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch("http://localhost:3000/data.json");
+  const friendsData = await res.json();
+
+  console.log(friendsData);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
-      <>
-        <main className="flex flex-1 w-full max-w-7xl flex-col items-center justify-between px-16 bg-white">
-          <BannerTitle></BannerTitle>
-          <BannerFourCard></BannerFourCard>
-          <AllFriends></AllFriends>
-        </main>
-      </>
+    <div className="bg-zinc-50 font-sans">
+      <main className="bg-white">
+        <BannerTitle />
+        <BannerFourCard />
+        <AllFriends />
+      </main>
     </div>
   );
 }
