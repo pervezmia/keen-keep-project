@@ -14,8 +14,8 @@ const Navbar = () => {
     <>
     
       <Link
-        href={"/home"}
-        className={`flex items-center gap-1 ${pathName === "/home" ? "bg-[#244D3F] text-white font-semibold px-3 py-1 rounded-xl " : ""}`}
+        href={"/"}
+        className={`flex items-center gap-1 ${pathName === "/" ? "bg-[#244D3F] text-white font-semibold px-3 py-1 rounded-xl " : ""}`}
       >
         <RiHome2Line /> Home
       </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
     <div>
       <div className="bg-gray-300 ">
         <div className="max-w-[1440px] w-[100%] mx-auto p-2 flex justify-between items-center gap-11">
-          <Link href={"/home"}>
+          <Link href={"/"}>
             <div>
               <span className="font-semibold">Keen</span>Keeper
             </div>

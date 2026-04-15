@@ -11,9 +11,9 @@ const FooterPage = () => {
                 <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <p className='font-semibold my-5'>Social Links</p>
                 <div className='gap-10 flex items-center justify-center '>
-                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={'/'}> <FaYoutube /></Link></div>
-                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={'/'}> <FaFacebookF /></Link></div>
-                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={'/'}> <RiTwitterXLine /></Link></div>
+                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={''}> <FaYoutube /></Link></div>
+                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={''}> <FaFacebookF /></Link></div>
+                    <div className='bg-green-300 p-3 w-3 h-3 rounded-full flex items-center justify-center'><Link href={''}> <RiTwitterXLine /></Link></div>
                     
                 </div>
             </div>

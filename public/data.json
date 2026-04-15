@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "https://i.ibb.co.com/5XbJwDLZ/image.png",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Jane Smith",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "https://i.ibb.co.com/SXhzB5xL/mitchell.avif",
     "email": "jane@example.com",
     "days_since_contact": 5,
     "status": "active",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Brown",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "https://i.ibb.co.com/svY7yGCW/Ben-Stokes.gif",
     "email": "michael@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Emily Davis",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "https://i.ibb.co.com/MDdJRR5r/babor-azam.webp",
     "email": "emily@example.com",
     "days_since_contact": 2,
     "status": "active",
@@ -88,7 +88,7 @@
     "name": "Olivia Thomas",
     "picture": "https://example.com/photo8.jpg",
     "email": "olivia@example.com",
-    "days_since_contact": 18,
+    " ": 18,
     "status": "overdue",
     "tags": ["travel"],
     "bio": "Met during a trip.",
@@ -102,7 +102,7 @@
     "email": "william@example.com",
     "days_since_contact": 6,
     "status": "active",
-    "tags": ["business"],
+    "tags": ["business","trustful"],
     "bio": "Business partner.",
     "goal": 12,
     "next_due_date": "2025-07-17"
@@ -138,7 +138,7 @@
     "email": "mia@example.com",
     "days_since_contact": 11,
     "status": "active",
-    "tags": ["college"],
+    "tags": ["college", "close friend"],
     "bio": "Classmate from university.",
     "goal": 14,
     "next_due_date": "2025-07-19"
@@ -150,7 +150,7 @@
     "email": "alex@example.com",
     "days_since_contact": 30,
     "status": "overdue",
-    "tags": ["mentor"],
+    "tags": ["mentor","honorable"],
     "bio": "Professional mentor.",
     "goal": 21,
     "next_due_date": "2025-07-08"
@@ -162,7 +162,7 @@
     "email": "isabella@example.com",
     "days_since_contact": 4,
     "status": "active",
-    "tags": ["family"],
+    "tags": ["family", "cousin"],
     "bio": "Younger sister.",
     "goal": 10,
     "next_due_date": "2025-07-14"
@@ -174,7 +174,7 @@
     "email": "liam@example.com",
     "days_since_contact": 14,
     "status": "overdue",
-    "tags": ["sports"],
+    "tags": ["sports", "friend"],
     "bio": "Football teammate.",
     "goal": 7,
     "next_due_date": "2025-07-12"
