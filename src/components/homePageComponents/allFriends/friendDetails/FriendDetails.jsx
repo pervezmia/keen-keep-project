@@ -4,6 +4,8 @@ import { BiMessageAltDetail } from "react-icons/bi";
 import { FcVideoCall } from "react-icons/fc";
 import { IoMdCall } from "react-icons/io";
 import BtnClick from "../../btnClick/BtnClick";
+import { RiDeleteBin6Line, RiNotificationSnoozeLine } from "react-icons/ri";
+import { HiArchive } from "react-icons/hi";
 
 const FriendDetails = ({ friend }) => {
   // console.log(friend);
@@ -23,6 +25,7 @@ const FriendDetails = ({ friend }) => {
   return (
     <div>
       <div className="grid grid-cols-4 gap-2 items-stretch">
+        {/*left card */}
         <div className="col-span-1 p-1 space-x-3.5 flex">
           <div className="card bg-base-300  text-neutral w-full flex flex-col">
             <div className="mt-3 flex items-center justify-center">
@@ -56,9 +59,17 @@ const FriendDetails = ({ friend }) => {
               <p className="italic">{`"${bio}"`}</p>
               <p className="text-xs md">Email: {email}</p>
             </div>
+          <div className="card bg-base-300">
+            <button className="btn w-full"><RiNotificationSnoozeLine /> Snooze 2 Weeks</button>
+            <button className="btn w-full"><HiArchive /> Archive</button>
+            <button className="btn w-full"><RiDeleteBin6Line /> Delete</button>
+
+          </div>
           </div>
         </div>
 
+
+          {/* right card */}
         <div className="col-span-3 p-1 space-y-3.5 flex flex-col card card-border ">
 
           <div className="grid grid-cols-3 gap-1">

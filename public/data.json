@@ -118,65 +118,6 @@
     "bio": "Childhood friend.",
     "goal": 20,
     "next_due_date": "2025-07-09"
-  },
-  {
-    "id": 11,
-    "name": "Ethan Harris",
-    "picture": "https://i.pravatar.cc/300?img=7",
-    "email": "ethan@example.com",
-    "days_since_contact": 3,
-    "status": "on-track",
-    "tags": ["gaming"],
-    "bio": "Online gaming buddy.",
-    "goal": 7,
-    "next_due_date": "2025-07-13"
-  },
-  {
-    "id": 12,
-    "name": "Mia Martin",
-    "picture": "https://i.pravatar.cc/300?img=8",
-    "email": "mia@example.com",
-    "days_since_contact": 11,
-    "status": "almost due",
-    "tags": ["college", "close friend"],
-    "bio": "Classmate from university.",
-    "goal": 14,
-    "next_due_date": "2025-07-19"
-  },
-  {
-    "id": 13,
-    "name": "Alexander Lee",
-    "picture": "https://i.pravatar.cc/300?img=9",
-    "email": "alex@example.com",
-    "days_since_contact": 30,
-    "status": "overdue",
-    "tags": ["mentor","honorable"],
-    "bio": "Professional mentor.",
-    "goal": 21,
-    "next_due_date": "2025-07-08"
-  },
-  {
-    "id": 14,
-    "name": "Isabella Walker",
-    "picture": "https://i.pravatar.cc/300?img=10",
-    "email": "isabella@example.com",
-    "days_since_contact": 4,
-    "status": "on-track",
-    "tags": ["family", "cousin"],
-    "bio": "Younger sister.",
-    "goal": 10,
-    "next_due_date": "2025-07-14"
-  },
-  {
-    "id": 15,
-    "name": "Liam Hall",
-    "picture": "https://i.pravatar.cc/300?img=11",
-    "email": "liam@example.com",
-    "days_since_contact": 14,
-    "status": "overdue",
-    "tags": ["sports", "friend"],
-    "bio": "Football teammate.",
-    "goal": 7,
-    "next_due_date": "2025-07-12"
   }
+ 
 ]

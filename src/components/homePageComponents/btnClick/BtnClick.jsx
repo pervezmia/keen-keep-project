@@ -8,24 +8,27 @@ import { toast } from "react-toastify";
 
 const BtnClick = ({friend}) => {
   console.log(friend);
-
+  
+    
     const {communication, setCommunication} = useContext(CommunicationContext);
     console.log(communication, "data of universal");
   const callHandle = () => {
     console.log("callHandle");
-    setCommunication([...communication, friend])
-    toast.success("Successfully calling!")
+    setCommunication([...communication,{ ...friend, type: "call"}])
+    toast.success(`${friend.name} Successfully calling!`)
+    
   };
   const messageHandle = () => {
     console.log("messageHandle");
-    setCommunication([...communication, friend])
-    toast.success("Successfully Messaging!")
+    setCommunication([...communication, { ...friend, type: "message"}])
+    toast.success(`${friend.name} Successfully text!`)
+   
     
   }
   const videoHandle = () => {
     console.log("videoHandle");
-    setCommunication([...communication, friend])
-    toast.success("Successfully Video calling!")
+    setCommunication([...communication, { ...friend, type: "video"}])
+    toast.success(`${friend.name} Successfully video calling!`)
   }
   return (
     <div className="grid grid-cols-3 gap-1.5">

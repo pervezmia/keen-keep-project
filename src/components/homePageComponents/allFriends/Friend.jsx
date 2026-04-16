@@ -27,7 +27,7 @@ const Friend = ({ friend }) => {
           <p className="flex flex-col md:flex gap-2.5 ">
             {tags.map((tag, index) => (
               <span
-                className={`btn px-4 rounded-full ${tag === "travel" && "bg-green-300"} ${tag === "business" ? "bg-amber-200" : ""} ${tag === "family" ? "bg-violet-500" : ""}`}
+                className={`btn px-4 rounded-full bg-green-100`}
                 key={index}
               >
                 {tag}
