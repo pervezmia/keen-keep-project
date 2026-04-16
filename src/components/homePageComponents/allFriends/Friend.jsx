@@ -8,14 +8,17 @@ const Friend = ({ friend }) => {
     <div>
       <div className="card bg-base-100 shadow-sm">
         <figure className="px-10 pt-10">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-3">
+            <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
             <Image
-              className=" rounded-[100%]"
+              className="w-full h-full object-cover"
               src={friend.picture}
               height={300}
               width={300}
               alt={friend.name}
             ></Image>
+
+            </div>
           </div>
         </figure>
         <div className="card-body items-center text-center space-y-3">

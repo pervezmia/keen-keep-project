@@ -1,8 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { BiMessageAltDetail } from "react-icons/bi";
+import { FcVideoCall } from "react-icons/fc";
+import { IoMdCall } from "react-icons/io";
+import BtnClick from "../../btnClick/BtnClick";
 
 const FriendDetails = ({ friend }) => {
-  console.log(friend);
+  // console.log(friend);
+  
   const {
     name,
     bio,
@@ -14,19 +19,23 @@ const FriendDetails = ({ friend }) => {
     picture,
     email,
   } = friend;
+
   return (
     <div>
-      <div className="grid grid-cols-4 gap-2 card">
-        <div className="col-span-1 p-1 space-x-3.5">
-          <div className="card bg-base-300  text-neutral">
-            <div className="flex items-center justify-center">
+      <div className="grid grid-cols-4 gap-2 items-stretch">
+        <div className="col-span-1 p-1 space-x-3.5 flex">
+          <div className="card bg-base-300  text-neutral w-full flex flex-col">
+            <div className="mt-3 flex items-center justify-center">
+              <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
               <Image
-                className="rounded-full"
+                className="w-full h-full object-cover "
                 alt={name}
                 src={picture}
-                width={50}
-                height={50}
+                width={200}
+                height={200}
               ></Image>
+
+              </div>
             </div>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{name}</h2>
@@ -50,7 +59,7 @@ const FriendDetails = ({ friend }) => {
           </div>
         </div>
 
-        <div className="col-span-3  p-1 space-y-3.5">
+        <div className="col-span-3 p-1 space-y-3.5 flex flex-col card card-border ">
 
           <div className="grid grid-cols-3 gap-1">
 
@@ -64,7 +73,7 @@ const FriendDetails = ({ friend }) => {
             </div>
             <div className="card card-border bg-base-300 ">
               <div className="card-body">
-                <h2 className="card-title">{next_due_date} </h2>
+                <h2 className="card-title">{goal} </h2>
                 <p>
                   Goal (Days)
                 </p>
@@ -72,7 +81,7 @@ const FriendDetails = ({ friend }) => {
             </div>
             <div className="card card-border bg-base-300 ">
               <div className="card-body">
-                <h2 className="card-title">{days_since_contact} </h2>
+                <h2 className="card-title">{next_due_date} </h2>
                 <p>
                   Days Since Contact
                 </p>
@@ -94,10 +103,9 @@ const FriendDetails = ({ friend }) => {
           </div>
           <div className="grid grid-cols-1 card card-border bg-base-300 p-5 space-y-1.5">
             <p>Quick Check-In</p>
-            <div className="grid grid-cols-3 gap-1.5">
-              <button className="btn">call</button>
-              <button className="btn">text</button>
-              <button className="btn">video</button>
+            <div>
+              {/* btn click */}
+              <BtnClick friend = {friend}></BtnClick>
             </div>
           </div>
         </div>

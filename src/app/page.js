@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <div className="bg-zinc-50 font-sans">
-      <main className="bg-white">
+      <main className="bg-white ">
         <BannerTitle />
         <BannerFourCard />
         <AllFriends />

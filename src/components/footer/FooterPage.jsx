@@ -5,7 +5,7 @@ import { RiTwitterXLine } from 'react-icons/ri';
 
 const FooterPage = () => {
     return (
-        <div className='w-full bg-[#244D3F] py-10 mt-5 mb-0'>
+        <div className='footer w-full bg-[#244D3F] py-10 mt-5 mb-0'>
             <div className='max-w-[70%] mx-auto text-center'>
                 <h2><span className='font-semibold'>Keen</span>Keeper</h2>
                 <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
