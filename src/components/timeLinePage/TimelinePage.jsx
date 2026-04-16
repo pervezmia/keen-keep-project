@@ -1,25 +1,55 @@
 "use client";
 import { CommunicationContext } from "@/context/comunicate.context";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useContext } from "react";
 import { FaVideo } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineTextsms } from "react-icons/md";
 
 const TimelinePage = () => {
-  const { communication, setCommunication } = useContext(CommunicationContext);
+  const { communication, setCommunication, allCommunication, setAllCommunication} = useContext(CommunicationContext);
+
+
+  const handleFilter = (e) => {
+
+    const value = e.target.value;
+
+    if(value === "Call"){
+      const filtered = communication.filter(item => item.type === "call" );
+      setAllCommunication(filtered);
+
+    } else if ( value === "Text"){
+      const filtered = communication.filter(item => item.type === "message" );
+      setAllCommunication(filtered);
+      
+
+    }else if(value === "Video"){
+      const filtered = communication.filter(item => item.type === "video" );
+      setAllCommunication(filtered);
+      
+
+    }
+     
+    }
+    
 
   return (
     <div className="space-y-4 max-w-[80%] w-[100%] mx-auto">
       <h2 className="font-bold text-4xl">Timeline</h2>
-      <input type="text" placeholder="Filter timeline" className="input" />
+      <select onChange={handleFilter} defaultValue="Pick a One" className="select select-info">
+  <option disabled ={true}>Pick a One</option>
+  <option>Call</option>
+  <option>Text</option>
+  <option>Video</option>
+</select>
 
-      {communication.length === 0 ? (
+      {allCommunication.length === 0 ? (
         <h2 className="font-bold text-4xl text-center my-5">
             No Contact
         </h2>
       ) : (
-        communication.map ((communicate,index) => <div key={index} className="grid grid-cols-1 gap-2.5">
+        allCommunication.map ((communicate,index) => <div key={index} className="grid grid-cols-1 gap-2.5">
         <div className="flex justify-between border border-gray-400 p-3 rounded-2xl">
           <div className="flex items-center justify-center gap-4">
             {communicate.type === "call" && <IoCall className="text-3xl" />} 

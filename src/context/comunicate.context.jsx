@@ -5,12 +5,17 @@ export const CommunicationContext = createContext();
 
 const CommunicationProvider = ({children}) => {
     const [communication, setCommunication] = useState([]);
+    const [allCommunication, setAllCommunication] = useState(communication);
     
     const data = {
         communication,
-        setCommunication
+        setCommunication,
+        allCommunication, 
+        setAllCommunication
+        
     }
-
+console.log(communication);
+console.log(allCommunication);
     return (
         <CommunicationContext.Provider value = {data}>
             {children}

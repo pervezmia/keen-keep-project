@@ -5,10 +5,13 @@ import React, { useContext } from "react";
 import { Legend, Pie, PieChart, Tooltip } from "recharts";
 
 const RechartPage = () => {
-  const { communication, setCommunication } = useContext(CommunicationContext);
-  const callLength = communication.filter(c=> c.type === "call")
-  const textLength = communication.filter(c=> c.type === "message")
-  const videoLength = communication.filter(c=> c.type === "video")
+  const { communication, setCommunication, allCommunication, setAllCommunication } = useContext(CommunicationContext);
+  const callLength = allCommunication.filter(c=> c.type === "call")
+  const textLength = allCommunication.filter(c=> c.type === "message")
+  const videoLength = allCommunication.filter(c=> c.type === "video")
+  // const callLength = communication.filter(c=> c.type === "call")
+  // const textLength = communication.filter(c=> c.type === "message")
+  // const videoLength = communication.filter(c=> c.type === "video")
   console.log(callLength);
   const data = [
     { name: "call", value: callLength.length, fill: "#0088FE" },

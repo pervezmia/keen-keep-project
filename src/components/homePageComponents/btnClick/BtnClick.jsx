@@ -10,17 +10,20 @@ const BtnClick = ({friend}) => {
   console.log(friend);
   
     
-    const {communication, setCommunication} = useContext(CommunicationContext);
+    const {communication, setCommunication, allCommunication, setAllCommunication} = useContext(CommunicationContext);
+    console.log(communication, "data of universal");
     console.log(communication, "data of universal");
   const callHandle = () => {
     console.log("callHandle");
     setCommunication([...communication,{ ...friend, type: "call"}])
+    setAllCommunication([...allCommunication,{ ...friend, type: "call"}])
     toast.success(`${friend.name} Successfully calling!`)
     
   };
   const messageHandle = () => {
     console.log("messageHandle");
     setCommunication([...communication, { ...friend, type: "message"}])
+    setAllCommunication([...allCommunication, { ...friend, type: "message"}])
     toast.success(`${friend.name} Successfully text!`)
    
     
@@ -28,6 +31,7 @@ const BtnClick = ({friend}) => {
   const videoHandle = () => {
     console.log("videoHandle");
     setCommunication([...communication, { ...friend, type: "video"}])
+    setAllCommunication([...allCommunication, { ...friend, type: "video"}])
     toast.success(`${friend.name} Successfully video calling!`)
   }
   return (
