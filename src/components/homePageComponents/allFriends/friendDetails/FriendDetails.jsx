@@ -22,11 +22,15 @@ const FriendDetails = ({ friend }) => {
     email,
   } = friend;
 
+  const dated = new Date ();
+    const options = {year: "numeric", month: "long", day: "numeric"};
+    const today = dated.toLocaleDateString('en-US', options);
+
   return (
     <div>
-      <div className="grid grid-cols-4 gap-2 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 items-stretch max-w-[80%] my-10 mx-auto">
         {/*left card */}
-        <div className="col-span-1 p-1 space-x-3.5 flex">
+        <div className="md:col-span-1 p-1 space-x-3.5 flex">
           <div className="card bg-base-300  text-neutral w-full flex flex-col">
             <div className="mt-3 flex items-center justify-center">
               <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
@@ -70,7 +74,7 @@ const FriendDetails = ({ friend }) => {
 
 
           {/* right card */}
-        <div className="col-span-3 p-1 space-y-3.5 flex flex-col card card-border ">
+        <div className="md:col-span-3 p-1 space-y-3.5 flex flex-col card card-border ">
 
           <div className="grid grid-cols-3 gap-1">
 
@@ -92,9 +96,9 @@ const FriendDetails = ({ friend }) => {
             </div>
             <div className="card card-border bg-base-300 ">
               <div className="card-body">
-                <h2 className="card-title">{next_due_date} </h2>
+                <h2 className="card-title">{today} </h2>
                 <p>
-                  Days Since Contact
+                  Next Due
                 </p>
               </div>
             </div>

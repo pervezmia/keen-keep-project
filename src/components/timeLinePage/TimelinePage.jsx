@@ -33,6 +33,9 @@ const TimelinePage = () => {
      
     }
     
+    const dated = new Date ();
+    const options = {year: "numeric", month: "long", day: "numeric"};
+    const today = dated.toLocaleDateString('en-US', options);
 
   return (
     <div className="space-y-4 max-w-[80%] w-[100%] mx-auto">
@@ -59,7 +62,8 @@ const TimelinePage = () => {
               <p>
                 <span>{communicate.type}</span> with {communicate.name}
               </p>
-              {communicate.next_due_date}
+              {/* {communicate.next_due_date} */}
+              {today}
             </div>
           </div>
 
