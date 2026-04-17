@@ -7,7 +7,7 @@ import { IoMdCall } from "react-icons/io";
 import { toast } from "react-toastify";
 
 const BtnClick = ({friend}) => {
-  console.log(friend);
+  // console.log(friend);
   
     
     const {communication, setCommunication, allCommunication, setAllCommunication} = useContext(CommunicationContext);

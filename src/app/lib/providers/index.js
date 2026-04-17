@@ -3,7 +3,7 @@ import CommunicationProvider from '@/context/comunicate.context';
 import React from 'react';
 
 const Providers = ({children}) => {
-    console.log("Raper");
+    // console.log("Raper");
     return (
         <CommunicationProvider>
             {children}

@@ -4,15 +4,15 @@ import React from "react";
 const DynamicFriendsData = async ({ params }) => {
   const { id } = await params;
 //   console.log(id);
-
-  const res = await fetch("http://localhost:3000/data.json", {
+const res = await fetch("http://localhost:3000/data.json", { 
+  // const res = await fetch("https://vercel.com/pervezs-projects.../keen-keeper/.../data.json", {
     cache: "no-store",
   });
   const friendsData = await res.json();
 //   console.log(friendsData);
 
   const friend = friendsData.find((f) => f.id === Number(id));
-  console.log(friend);
+  // console.log(friend);
 
 
   if (!friend) {

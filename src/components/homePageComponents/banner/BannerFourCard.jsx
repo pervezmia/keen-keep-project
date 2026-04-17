@@ -2,6 +2,7 @@ import React from "react";
 
 const BannerFourCard = async() => {
     const res = await fetch("http://localhost:3000/data.json");
+    // const res = await fetch("https://vercel.com/pervezs-projects.../keen-keeper/.../data.json");
     const friendsData = await res.json();
     
     

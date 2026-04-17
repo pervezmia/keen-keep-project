@@ -5,6 +5,7 @@ import BannerTitle from "@/components/homePageComponents/banner/BannerTitle";
 
 export default async function Home() {
   const res = await fetch("http://localhost:3000/data.json");
+  // const res = await fetch("https://vercel.com/pervezs-projects.../keen-keeper/.../data.json");
   const friendsData = await res.json();
 
   console.log(friendsData);

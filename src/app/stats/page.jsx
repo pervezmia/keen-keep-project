@@ -12,7 +12,7 @@ const RechartPage = () => {
   // const callLength = communication.filter(c=> c.type === "call")
   // const textLength = communication.filter(c=> c.type === "message")
   // const videoLength = communication.filter(c=> c.type === "video")
-  console.log(callLength);
+  // console.log(callLength);
   const data = [
     { name: "call", value: callLength.length, fill: "#0088FE" },
     { name: "text", value: textLength.length, fill: "#00C49F" },
