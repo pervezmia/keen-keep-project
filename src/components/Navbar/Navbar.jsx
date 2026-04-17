@@ -15,7 +15,7 @@ const Navbar = () => {
     
       <Link
         href={"/"}
-        className={`flex items-center gap-1 ${pathName === "/" ? "bg-[#244D3F] text-white font-semibold px-3 py-1 rounded-xl " : ""}`}
+        className={`flex items-center gap-1 ${pathName === "/home" ? "bg-[#244D3F] text-white font-semibold px-3 py-1 rounded-xl " : ""}`}
       >
         <RiHome2Line /> Home
       </Link>
