@@ -7,7 +7,7 @@ const Friend = ({ friend }) => {
   return (
     <div>
       <Link href={`/${id}`}>
-      <div className="card bg-base-100 shadow-sm">
+      <div className="card bg-base-100 shadow-sm  max-w-[350px]">
         <figure className="px-10 pt-10">
           <div className="flex items-center justify-center mt-3">
             <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
