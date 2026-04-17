@@ -9,8 +9,8 @@ export async function generateMetadata ({params}){
   const friend = friendsData.find((f) => f.id === Number(id));
 
   return {
-    title: friend.name,
-    description: friend.bio,
+    title: friend?.name || "Friend Not Found",
+    description: friend?.bio || "No description available",
   }
     
   }
