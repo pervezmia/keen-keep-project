@@ -5,14 +5,13 @@ import BannerFourCard from "./BannerFourCard";
 const BannerTitle = () => {
     
   return (
-    <div>
+    <div className="my-10 p-5">
         
-        <div className="text-center">
+        <div className="text-center space-y-5">
       <h2 className="font-bold text-3xl">Friends to keep close in your life</h2>
       <p className="text-[#64748B] text-[1rem]">
         Your personal shelf of meaningful connections. Browse, tend, and nurture
-        the <br />
-        relationships that matter most.
+        the relationships that matter most.
       </p>
       <div className="flex items-center justify-center">
         

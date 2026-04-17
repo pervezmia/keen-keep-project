@@ -11,8 +11,8 @@ const BannerFourCard = async() => {
     
     
   return (
-    <div className="flex items-center justify-center mt-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="flex items-center justify-center mt-5 px-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
         <div className="card card-border border-base-300 bg-base-100 ">
           <div className="card-body">
             <h2 className="card-title ">{friendsData.length}</h2>
