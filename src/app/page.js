@@ -4,8 +4,8 @@ import BannerTitle from "@/components/homePageComponents/banner/BannerTitle";
 // import Friends from "@/components/homePageComponents/friendsInfo/Friends";
 
 export default async function Home() {
-  const res = await fetch("http://localhost:3000/data.json");
-  // const res = await fetch("https://vercel.com/pervezs-projects.../keen-keeper/.../data.json");
+  const res = await fetch("https://keen-keeper-lime.vercel.app/data.json");
+
   const friendsData = await res.json();
 
   console.log(friendsData);
