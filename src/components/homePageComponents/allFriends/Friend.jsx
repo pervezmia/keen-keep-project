@@ -6,6 +6,7 @@ const Friend = ({ friend }) => {
   const { id, name, days_since_contact, tags, status } = friend;
   return (
     <div>
+      <Link href={`/${id}`}>
       <div className="card bg-base-100 shadow-sm">
         <figure className="px-10 pt-10">
           <div className="flex items-center justify-center mt-3">
@@ -35,16 +36,17 @@ const Friend = ({ friend }) => {
             ))}
           </p>
           <div className="card-actions">
-            <Link href={`/${id}`}>
+            {/* <Link href={`/${id}`}> */}
               <button
                 className={`rounded-full ${status === "on-track" && "btn btn-success"} ${status === "almost due" && "btn btn-secondary"} ${status === "overdue" && "btn btn-warning"}`}
               >
                 {status}
               </button>
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 };
